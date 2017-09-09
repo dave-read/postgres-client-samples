@@ -2,8 +2,8 @@
 applications:
 - name: python_postgres_example
   buildpack: python_buildpack
-  command: python query_inventory
+  command: python query_catalog
   services:
-    - broker-test
+    - springdb2
   env:
-    db-service: azure-postgresqldb-current
+    db-service: azure-postgresqldb
