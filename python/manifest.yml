@@ -1,0 +1,9 @@
+---
+applications:
+- name: python_postgres_example
+  buildpack: python_buildpack
+  command: python query_inventory
+  services:
+    - broker-test
+  env:
+    db-service: azure-postgresqldb-current
