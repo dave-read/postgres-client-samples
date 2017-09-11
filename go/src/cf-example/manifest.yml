@@ -1,0 +1,11 @@
+---
+applications:
+- name: go-cf-postrgresql
+  services:
+    - broker-test
+    - broker-test-current
+  env:
+    db-service: broker-test
+  instances: 1
+  buildpack: https://github.com/cloudfoundry/go-buildpack.git
+  command: cf-example  

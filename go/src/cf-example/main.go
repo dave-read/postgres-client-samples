@@ -29,7 +29,7 @@ func main() {
 		checkError(serviceError)
 		credentials := service.Credentials
 		HOST = credentials["hostname"].(string)
-		DATABASE = credentials["dbname"].(string)
+		DATABASE = credentials["name"].(string)
 		USER = credentials["username"].(string)
 		PASSWORD = credentials["password"].(string)
 		URI = credentials["uri"].(string)
